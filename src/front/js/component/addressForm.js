@@ -23,7 +23,7 @@ export const AddressForm = () => {
 
 
   const validateAddress = async () => {
-    const apiKey = "AIzaSyA0Wq3nAEPCtgSku9z8_bcRM7-NTyGKRVk";
+    const apiKey = "";
 
     const apiURL = `https://addressvalidation.googleapis.com/v1:validateAddress?key=${apiKey}`;
 
