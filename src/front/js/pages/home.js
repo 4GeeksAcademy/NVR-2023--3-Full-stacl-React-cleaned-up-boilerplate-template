@@ -3,13 +3,14 @@ import React, { useState } from "react";
 export const Home = () => {
 	const slides = [
 		[
-			{ content: "servdfjdksjgkldfgklfdhgfdshgçdfsgice1", background: "#FFD700", color: "white", class:"service1"},
+			{ content: "jdksjgkldfgklfdhgfdshgçdfsgice1", background: "#FFD700", color: "white", class:"service1"},
 			{ content: "service2", background: "green", color: "white", class:"service2"},
 			{ content: "service3", background: "grey", color: "white", class:"service3"},
 			{ content: "service4", background: "blue", color: "white", class:"service4"},
 			{ content: "service5", background: "darkgreen", color: "white", class:"service5"},
 			{ content: "service6", background: "#FFD700", color: "black", class:"service6"},
 			{ content: "service7", background: "chocolate", color: "green", class:"service7"},
+			{ content: "service8", background: "darkgreen", color: "purple", class:"service7"},
 		],
 		
 		[
@@ -35,10 +36,8 @@ export const Home = () => {
 		
 	];
 
-	let slideIndex = 0;
-	const [slideStream, setSlideStream ] = useState(slides[slideIndex]);
-
-	
+	let slidesIndex = 0;
+	const [slideStream, setSlideStream ] = useState(slides[slidesIndex]);
 
 	// inherited code
 	let items = document.querySelectorAll('.carousel .carousel-item');
@@ -56,8 +55,19 @@ export const Home = () => {
 	});
 	// inherited code
 
+	const handleSlideStreamChange = () => {
+		if (slidesIndex === slides.length - 1) {
+		  slidesIndex = 0;
+		} else {
+		  slidesIndex++;
+		}
+		setSlideStream(slides[slidesIndex]);
+	  };
+	  
+
 	return (
 		<>
+		<button className="m-3 btn btn-success" onClick={handleSlideStreamChange}>Change</button>
 			<div className="container-fluid mx-0 gx-0 px-0 my-3">
 				<div className="row vh-100 align-items-center justify-content-center">
 					<div id="recipeCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
