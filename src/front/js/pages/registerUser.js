@@ -82,7 +82,7 @@ export const RegisterUser = () => {
         };
 
         const addressString = getAddressString(address);
-        const apiKey = "AIzaSyA0Wq3nAEPCtgSku9z8_bcRM7-NTyGKRVk";
+        const apiKey = "";
         const url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + addressString + "+CA&key=" + apiKey;
 
         try {
