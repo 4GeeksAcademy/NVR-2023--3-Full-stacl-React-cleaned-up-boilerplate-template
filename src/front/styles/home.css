@@ -8,7 +8,6 @@ body {
 }
 
 .slideWrapper {
-    background: transparent;
     padding: 1.2rem;
     border-top: .5px solid rgb(226, 224, 157);
     border-right: 0;
@@ -16,60 +15,60 @@ body {
     border-left: .5px solid rgb(226, 224, 157);
 }
 
- @media (max-width: 767px) {
-     .carousel-inner .carousel-item>div {
-         display: none;
-     }
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
 
-     .carousel-inner .carousel-item>div:first-child {
-         display: block;
-     }
- }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
 
- .carousel-inner .carousel-item.active,
- .carousel-inner .carousel-item-next,
- .carousel-inner .carousel-item-prev {
-     display: flex;
- }
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
 
- /* medium and up screens */
- @media (min-width: 768px) {
 
-     .carousel-inner .carousel-item-end.active,
-     .carousel-inner .carousel-item-next {
-         transform: translateX(25%);
-     }
+/* medium and up screens */
+@media (min-width: 768px) {
 
-     .carousel-inner .carousel-item-start.active,
-     .carousel-inner .carousel-item-prev {
-         transform: translateX(-25%);
-     }
- }
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
 
- .carousel-inner .carousel-item-end,
- .carousel-inner .carousel-item-start {
-     transform: translateX(0);
- }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
 
- .slideContent {
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
 
-     font-family: 'Roboto', sans-serif;
-     font-size: 1.8rem;
-     font-weight: 400;
+.slideContent {
 
- }
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
 
- .clickable {
+}
+
+.clickable {
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .clickable:hover {
+}
+
+.clickable:hover {
     transform: scale(1.2);
-  }
-  
-  .clickable:hover:after {
+}
+
+.clickable:hover:after {
     transition: transform 0.3s ease-in-out;
     transform: scale(1);
-  
-  }
-  
+
+}

@@ -26,7 +26,7 @@ export const Home = () => {
 					<Carousel start={startSlide} end={endSlide} />
 				</div>
 				<div>
-
+					<p className="text-success">footer</p>
 				</div>
 			</div>
 		</>
