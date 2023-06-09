@@ -67,22 +67,25 @@ export const Carousel = ({ start, end }) => {
                         </div>
                     ))}
                 </div>
-                <div className="controlsWrapper">
-                    <a className="carousel-control-prev bg-transparent w-aut"
+                <div className="controlsWrapper pt-6 mt-6">
+                    <span className=""
                         href="#slideCarousel"
                         role="button"
                         data-bs-slide="prev"
                     >
-                        <span className="carousel-control-prev-icon" aria-hidden="true" />
-                    </a>
-                    <a
-                        className="carousel-control-next bg-transparent w-aut"
+                        <span className="carousselPreviousControl text-success" aria-hidden="true" />
+                            PREVIOUS
+                        </span>
+                    <span
+                        className=""
                         href="#slideCarousel"
                         role="button"
                         data-bs-slide="next"
                     >
-                        <span className="carousel-control-next-icon" aria-hidden="true" />
-                    </a>
+                        <span className="carousselNextControl text-success" aria-hidden="true">
+                            NEXT
+                        </span>
+                    </span>
                 </div>        
             </div>
         </>
