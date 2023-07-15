@@ -5,8 +5,8 @@ export const Carousel = ({ start, end }) => {
 
     const slides = [
         {
-            content: "A stubborn pipe?\n A pesky hornet's nest?\nWe got you covered.",
-            background: "rgb(27, 27, 27)",
+            content: "A stubborn pipe?\n A pesky hornet's nest?\nWe got you covered",
+            background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
             class2: "class2",
@@ -14,8 +14,8 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Over 50 home services at a click of a button",
-            background: "green",
+            content: "Over 50 home services a click away",
+            background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class4",
             class2: "class5",
@@ -23,17 +23,27 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "What you want.\n When you want it.\n Where you want it.\n",
-            background: "rgb(27, 27, 27)",
+            content: "",
+            background: "green",
             color: "rgb(226, 224, 157)",
-            class1: "class7",
-            class2: "class8",
-            class3: "class9",
+            class1: "class4",
+            class2: "class5",
+            class3: "class6",
+            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455169/03%20Video/01_Painter_Golden.mp4"
+        },
+
+        {
+            content: "What you want\n When you want it\n Where you want it\n",
+            background: "rgb(1, 36, 4)",
+            color: "rgb(226, 224, 157)",
+            class1: "firstWordItalic",
+            class2: "firstWordItalic",
+            class3: "firstWordItalic",
             video: ""
         },
         {
-            content: "Sale:\n Zen meditation 50% off",
-            background: "rgb(27, 27, 27)",
+            content: "Dog Walking 25% off summer sale kicking off in August",
+            background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class10",
             class2: "class11",
@@ -41,8 +51,8 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Certified professionals?\n Or just seasoned experts?\nYou choose.",
-            background: "rgb(27, 27, 27)",
+            content: "Certified professionals?\n Seasoned experts?\n We got them",
+            background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class13",
             class2: "class14",
@@ -50,49 +60,49 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Safety first.\nEasily safeguard your services.",
-            background: "darkgreen",
-            color: "rgb(226, 224, 157)",
+            content: "Need extra security? \nSafeguard your services in quick easy steps",
+            background: "#24194f",
+            color: "#dcdae6",
             class1: "class16",
             class2: "class17",
             class3: "class18",
             video: ""
         },
         {
-            content: "service6",
+            content: "",
             background: "rgb(27, 27, 27)",
             color: "rgb(226, 224, 157)",
             class1: "class19",
             class2: "class20",
             class3: "class21",
-            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689449999/03%20Video/03_massage-bw_-cropped_phrpjq.mp4"
+            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455165/03%20Video/02_Gardening_Golden.mp4"
         },
         {
-            content: "service7",
-            background: "chocolate",
-            color: "green",
+            content: "20% off on your first service",
+            background: "#f5da42",
+            color: "darkgreen",
             class1: "class22",
             class2: "class23",
             class3: "class24",
             video: ""
         },
         {
-            content: "service8",
+            content: "",
             background: "darkgreen",
             color: "purple",
             class1: "class25",
             class2: "class26",
             class3: "class27",
-            video: ""
+            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689457311/03%20Video/03b_Massage_-_Golden_gnhoaq.mp4"
         },
         {
-            content: "service9",
+            content: "",
             background: "darkgreen",
             color: "purple",
             class1: "class28",
             class2: "class29",
             class3: "class30",
-            video: ""
+            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689449999/03%20Video/03_massage-bw_-cropped_phrpjq.mp4"
         }
     ];
 
