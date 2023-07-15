@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     background: rgb(27, 27, 27);
@@ -52,23 +52,26 @@ body {
 }
 
 .slideContent {
-
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.17rem;
     font-weight: 400;
 
 }
 
-.clickable {
-    transition: transform 0.5s ease-in-out;
-}
 
-.clickable:hover {
-    transform: scale(1.2);
-}
+/* CSS for video  */
 
-.clickable:hover:after {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1);
-
-}
+.slideWrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slideVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

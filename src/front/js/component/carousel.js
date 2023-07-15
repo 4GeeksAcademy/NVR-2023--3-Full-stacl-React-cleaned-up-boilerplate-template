@@ -4,29 +4,96 @@ export const Carousel = ({ start, end }) => {
     // Saved version
 
     const slides = [
-        { content: "service1", background: "rgb(27,27,27)", color: "rgb(226, 224, 157)", class: "service1" },
-        { content: "service2", background: "green", color: "rgb(226, 224, 157)", class: "service2" },
-        { content: "service3", background: "rgb(27, 27, 27)", color: "rgb(226, 224, 157)", class: "service3" },
-        { content: "service4", background: "rgb(27, 27, 27)", color: "rgb(226, 224, 157)", class: "service4" },
-        { content: "service5", background: "darkgreen", color: "rgb(226, 224, 157)", class: "service5" },
-        { content: "service6", background: "rgb(27, 27, 27)", color: "rgb(226, 224, 157)", class: "service6" },
-        { content: "service7", background: "chocolate", color: "green", class: "service7" },
-        { content: "service8", background: "darkgreen", color: "purple", class: "service8" },
-        { content: "service9", background: "darkgreen", color: "purple", class: "service9" },
-        { content: "provider1", background: "yellow", color: "white", class: "provider11" },
-        { content: "provider2", background: "yellow", color: "white", class: "provider12" },
-        { content: "provider3", background: "yellow", color: "white", class: "provider13" },
-        { content: "provider4", background: "yellow", color: "white", class: "provider14" },
-        { content: "provider5", background: "yellow", color: "white", class: "provider15" },
-        { content: "provider6", background: "yellow", color: "white", class: "provider16" },
-        { content: "provider7", background: "yellow", color: "white", class: "provider17" },
-        { content: "price1", background: "yellow", color: "white" },
-        { content: "price2", background: "yellow", color: "white" },
-        { content: "price3", background: "yellow", color: "white" },
-        { content: "price4", background: "yellow", color: "white" },
-        { content: "price5", background: "yellow", color: "white" },
-        { content: "price6", background: "yellow", color: "white" },
-        { content: "price7", background: "yellow", color: "white" },
+        {
+            content: "A stubborn pipe?\n A pesky hornet's nest?\nWe got you covered.",
+            background: "rgb(27, 27, 27)",
+            color: "rgb(226, 224, 157)",
+            class1: "class1",
+            class2: "class2",
+            class3: "class3",
+            video: ""
+        },
+        {
+            content: "Over 50 home services at a click of a button",
+            background: "green",
+            color: "rgb(226, 224, 157)",
+            class1: "class4",
+            class2: "class5",
+            class3: "class6",
+            video: ""
+        },
+        {
+            content: "What you want.\n When you want it.\n Where you want it.\n",
+            background: "rgb(27, 27, 27)",
+            color: "rgb(226, 224, 157)",
+            class1: "class7",
+            class2: "class8",
+            class3: "class9",
+            video: ""
+        },
+        {
+            content: "Sale:\n Zen meditation 50% off",
+            background: "rgb(27, 27, 27)",
+            color: "rgb(226, 224, 157)",
+            class1: "class10",
+            class2: "class11",
+            class3: "class12",
+            video: ""
+        },
+        {
+            content: "Certified professionals?\n Or just seasoned experts?\nYou choose.",
+            background: "rgb(27, 27, 27)",
+            color: "rgb(226, 224, 157)",
+            class1: "class13",
+            class2: "class14",
+            class3: "class15",
+            video: ""
+        },
+        {
+            content: "Safety first.\nEasily safeguard your services.",
+            background: "darkgreen",
+            color: "rgb(226, 224, 157)",
+            class1: "class16",
+            class2: "class17",
+            class3: "class18",
+            video: ""
+        },
+        {
+            content: "service6",
+            background: "rgb(27, 27, 27)",
+            color: "rgb(226, 224, 157)",
+            class1: "class19",
+            class2: "class20",
+            class3: "class21",
+            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689449999/03%20Video/03_massage-bw_-cropped_phrpjq.mp4"
+        },
+        {
+            content: "service7",
+            background: "chocolate",
+            color: "green",
+            class1: "class22",
+            class2: "class23",
+            class3: "class24",
+            video: ""
+        },
+        {
+            content: "service8",
+            background: "darkgreen",
+            color: "purple",
+            class1: "class25",
+            class2: "class26",
+            class3: "class27",
+            video: ""
+        },
+        {
+            content: "service9",
+            background: "darkgreen",
+            color: "purple",
+            class1: "class28",
+            class2: "class29",
+            class3: "class30",
+            video: ""
+        }
     ];
 
     const selectedSlides = slides.slice(start, end + 1);
@@ -47,6 +114,18 @@ export const Carousel = ({ start, end }) => {
     });
     // inherited code
 
+    // Pre-processing slide content
+
+    const formatContent = (content) => {
+        const lineBreakSequence = "\n";
+        const lines = content.split(lineBreakSequence);
+        return lines.map((line, index) => (
+            <div key={index} className={`class${index % 3 + 1}`}>
+                {line}
+            </div>
+        ));
+    };
+
     return (
         <>
             <div id="slideCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
@@ -57,9 +136,11 @@ export const Carousel = ({ start, end }) => {
                                 <div className="">
                                     <div className="">
                                         <div className={`slideWrapper ${slide.class}`} style={{ height: "15rem", background: slide.background, color: slide.color }}>
-                                            <div className="slideContent">
-                                                {slide.content}
-                                            </div>
+                                            {slide.video !== "" ? (
+                                                <video src={slide.video} autoPlay muted loop className="slideVideo" />
+                                            ) : (
+                                                <div className="slideContent">{formatContent(slide.content)}</div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -68,25 +149,16 @@ export const Carousel = ({ start, end }) => {
                     ))}
                 </div>
                 <div className="controlsWrapper pt-6 mt-6">
-                    <span className=""
-                        href="#slideCarousel"
-                        role="button"
-                        data-bs-slide="prev"
-                    >
+                    <span className="" href="#slideCarousel" role="button" data-bs-slide="prev">
                         <span className="carousselPreviousControl text-success" aria-hidden="true" />
-                            PREVIOUS
-                        </span>
-                    <span
-                        className=""
-                        href="#slideCarousel"
-                        role="button"
-                        data-bs-slide="next"
-                    >
+                        previous
+                    </span>
+                    <span className="" href="#slideCarousel" role="button" data-bs-slide="next">
                         <span className="carousselNextControl text-success" aria-hidden="true">
-                            NEXT
+                            next
                         </span>
                     </span>
-                </div>        
+                </div>
             </div>
         </>
     );
