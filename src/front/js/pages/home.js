@@ -29,32 +29,33 @@ export const Home = () => {
 				<div className="rowalign-items-center justify-content-center">
 					<Carousel start={startSlide} end={endSlide} />
 				</div>
-				<div className="mt-5 d-flex flex-row">
+				<div className="ms-5 mt-5 d-flex flex-row">
 					<div>
-						<span className="footerLinjs">
-							privacy policy
+						<span className="footerLink">
+							Privacy Policy
 						</span>
-						<span className="footerLinjs">
-							terms of service
+						<span className="footerLink">
+							Cookies Policy
 						</span>
-						<span className="footerLinjs">
-							work with us
+						<span className="footerLink">
+							Terms of Service
 						</span>
-						<span className="footerLinjs">
+						<span className="footerLink">
+							Work with us
+						</span>
+						<span className="footerLink">
 							info@solutioner.com
 						</span>
-					</div>
-					<div>
-						<span className="providerHoemButton">
-							provider sign-in
-						</span>
-						<span className="providerHoemButton">
-							provider register
-						</span>
-					</div>
-					<div>
-						<span>
+						<span className="footerLink">
 							©2023 Solutioner Systems. All Rights reserved.
+						</span>
+					</div>
+					<div className="providerButtonsWrapper">
+						<span >
+							<button className="providerHoemButton"> provider sign-in</button>
+						</span>
+						<span>
+							<button className="providerHoemButton">provider register</button>
 						</span>
 					</div>
 				</div>

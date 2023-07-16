@@ -53,7 +53,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Track your srvices like a\n breeze",
+            content: "Track your services like a\n breeze",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class10",
