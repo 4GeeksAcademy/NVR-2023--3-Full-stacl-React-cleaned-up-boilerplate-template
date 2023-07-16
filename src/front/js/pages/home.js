@@ -13,16 +13,16 @@ export const Home = () => {
 	return (
 		<>
 			<div className="container-fluid m-0 g-0 p-0">
-				<div className="Header my-3 d-flex align-items-center justify-content-between">
-					<div className="Homeicon">
-						<button className="" onClick={handleSlideStreamChange}>Home</button>
+				<div className="Header pt-3 mb-5 d-flex align-items-center justify-content-between">
+					<div className="logo">
+						Solutioner
 					</div>
 					<div className="buttons">
 						<button className="signinUser">Sign in</button>
 						<button className="registerUser">Register</button>
 					</div>
 				</div>
-				<div className="row align-items-center justify-content-center">
+				<div className="rowalign-items-center justify-content-center">
 					<Carousel start={startSlide} end={endSlide} />
 				</div>
 				<div>

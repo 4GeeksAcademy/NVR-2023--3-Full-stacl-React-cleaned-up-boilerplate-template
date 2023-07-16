@@ -5,7 +5,7 @@ export const Carousel = ({ start, end }) => {
 
     const slides = [
         {
-            content: "A stubborn pipe?\n A pesky hornet's nest?\nWe got you covered",
+            content: "A stubborn sink pipe?\n A pesky hornet's nest?\nWe got you covered.",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
@@ -14,7 +14,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Over 50 home services a click away",
+            content: "Over 50 home services only a click away.",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class4",
@@ -33,7 +33,7 @@ export const Carousel = ({ start, end }) => {
         },
 
         {
-            content: "What you want\n When you want it\n Where you want it\n",
+            content: "What you want.\n When you want it.\n Where you want it.\n",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "firstWordItalic",
@@ -42,7 +42,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Dog Walking 25% off summer sale kicking off in August",
+            content: "Track your srvices like a breeze.",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class10",
@@ -51,7 +51,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Certified professionals?\n Seasoned experts?\n We got them",
+            content: "Certified professionals?\n Seasoned experts?\n All at your service.",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class13",
@@ -60,7 +60,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "Need extra security? \nSafeguard your services in quick easy steps",
+            content: "Need extra security? \nSafeguard your services in quick easy steps.",
             background: "#24194f",
             color: "#dcdae6",
             class1: "class16",
@@ -78,12 +78,12 @@ export const Carousel = ({ start, end }) => {
             video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455165/03%20Video/02_Gardening_Golden.mp4"
         },
         {
-            content: "20% off on your first service",
-            background: "#f5da42",
-            color: "darkgreen",
-            class1: "class22",
-            class2: "class23",
-            class3: "class24",
+            content: "August sale:\n 30% off on all Handyman services.",
+            background: "rgb(1, 36, 4)",
+            color: "#D69EEB",
+            class1: "class1",
+            class2: "class2",
+            class3: "class3",
             video: ""
         },
         {
@@ -126,20 +126,23 @@ export const Carousel = ({ start, end }) => {
 
     // Pre-processing slide content
 
-    const formatContent = (content) => {
+    const formatContent = (content, index) => {
         const lineBreakSequence = "\n";
         const lines = content.split(lineBreakSequence);
-        return lines.map((line, index) => (
-            <div key={index} className={`class${index % 3 + 1}`}>
+        return lines.map((line, lineIndex) => (
+            <div key={lineIndex} className={slides[index][`class${lineIndex % 3 + 1}`]}>
                 {line}
             </div>
         ));
     };
 
+
+    // Main JSX 
+
     return (
         <>
             <div id="slideCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
-                <div className="carousel-inner mx-0 px-0" role="listbox">
+                <div className="carousel-inner mt-3 mx-0 px-0" role="listbox">
                     {selectedSlides.map((slide, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                             <div className="col-md-3">
@@ -149,7 +152,8 @@ export const Carousel = ({ start, end }) => {
                                             {slide.video !== "" ? (
                                                 <video src={slide.video} autoPlay muted loop className="slideVideo" />
                                             ) : (
-                                                <div className="slideContent">{formatContent(slide.content)}</div>
+                                                <div className="slideContent">{formatContent(slide.content, index)}</div>
+
                                             )}
                                         </div>
                                     </div>
