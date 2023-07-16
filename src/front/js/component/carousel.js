@@ -5,7 +5,7 @@ export const Carousel = ({ start, end }) => {
 
     const slides = [
         {
-            content: "A stubborn sink pipe?\n A pesky hornet's nest?\nWe got you covered.",
+            content: "A stubborn sink pipe?\n A pesky hornet's nest?\nWe got you covered",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
@@ -13,13 +13,14 @@ export const Carousel = ({ start, end }) => {
             class3: "class3",
             video: ""
         },
+
         {
-            content: "Over 50 home services only a click away.",
+            content: "Certified professionals?\n Seasoned experts?\n All at your service",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
-            class1: "class4",
-            class2: "class5",
-            class3: "class6",
+            class1: "class13",
+            class2: "class14",
+            class3: "class15",
             video: ""
         },
         {
@@ -33,16 +34,26 @@ export const Carousel = ({ start, end }) => {
         },
 
         {
-            content: "What you want.\n When you want it.\n Where you want it.\n",
+            content: "What you want\n When you want it\n Where you want it\n",
+            background: "#24194f",
+            color: "yellow",
+            class1: "",
+            class2: "",
+            class3: "",
+            video: ""
+        },
+
+        {
+            content: "Over 50 services at your doorstep, a click away",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
-            class1: "firstWordItalic",
-            class2: "firstWordItalic",
-            class3: "firstWordItalic",
+            class1: "class4",
+            class2: "class5",
+            class3: "class6",
             video: ""
         },
         {
-            content: "Track your srvices like a breeze.",
+            content: "Track your srvices like a\n breeze",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class10",
@@ -50,17 +61,9 @@ export const Carousel = ({ start, end }) => {
             class3: "class12",
             video: ""
         },
+
         {
-            content: "Certified professionals?\n Seasoned experts?\n All at your service.",
-            background: "rgb(1, 36, 4)",
-            color: "rgb(226, 224, 157)",
-            class1: "class13",
-            class2: "class14",
-            class3: "class15",
-            video: ""
-        },
-        {
-            content: "Need extra security? \nSafeguard your services in quick easy steps.",
+            content: "Need extra security? \nSafeguard your services in two easy steps",
             background: "#24194f",
             color: "#dcdae6",
             class1: "class16",
@@ -69,7 +72,7 @@ export const Carousel = ({ start, end }) => {
             video: ""
         },
         {
-            content: "",
+            content: "\n",
             background: "rgb(27, 27, 27)",
             color: "rgb(226, 224, 157)",
             class1: "class19",
@@ -78,7 +81,7 @@ export const Carousel = ({ start, end }) => {
             video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455165/03%20Video/02_Gardening_Golden.mp4"
         },
         {
-            content: "August sale:\n 30% off on all Handyman services.",
+            content: "Treat a loved one to an\n at-home indulgence",
             background: "rgb(1, 36, 4)",
             color: "#D69EEB",
             class1: "class1",
@@ -95,15 +98,7 @@ export const Carousel = ({ start, end }) => {
             class3: "class27",
             video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689457311/03%20Video/03b_Massage_-_Golden_gnhoaq.mp4"
         },
-        {
-            content: "",
-            background: "darkgreen",
-            color: "purple",
-            class1: "class28",
-            class2: "class29",
-            class3: "class30",
-            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689449999/03%20Video/03_massage-bw_-cropped_phrpjq.mp4"
-        }
+
     ];
 
     const selectedSlides = slides.slice(start, end + 1);
@@ -147,8 +142,8 @@ export const Carousel = ({ start, end }) => {
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                             <div className="col-md-3">
                                 <div className="">
-                                    <div className="">
-                                        <div className={`slideWrapper ${slide.class}`} style={{ height: "15rem", background: slide.background, color: slide.color }}>
+                                    <div className="mt-5">
+                                        <div className={`slideWrapper`} style={{ height: "15rem", background: slide.background, color: slide.color }}>
                                             {slide.video !== "" ? (
                                                 <video src={slide.video} autoPlay muted loop className="slideVideo" />
                                             ) : (
@@ -162,17 +157,7 @@ export const Carousel = ({ start, end }) => {
                         </div>
                     ))}
                 </div>
-                <div className="controlsWrapper pt-6 mt-6">
-                    <span className="" href="#slideCarousel" role="button" data-bs-slide="prev">
-                        <span className="carousselPreviousControl text-success" aria-hidden="true" />
-                        previous
-                    </span>
-                    <span className="" href="#slideCarousel" role="button" data-bs-slide="next">
-                        <span className="carousselNextControl text-success" aria-hidden="true">
-                            next
-                        </span>
-                    </span>
-                </div>
+
             </div>
         </>
     );
@@ -180,5 +165,15 @@ export const Carousel = ({ start, end }) => {
 }
 
 
-
+{/* <div className="controlsWrapper pt-6 mt-6">
+    <span className="" href="#slideCarousel" role="button" data-bs-slide="prev">
+        <span className="carousselPreviousControl text-success" aria-hidden="true" />
+        previous
+    </span>
+    <span className="" href="#slideCarousel" role="button" data-bs-slide="next">
+        <span className="carousselNextControl text-success" aria-hidden="true">
+            next
+        </span>
+    </span>
+</div> */}
 
