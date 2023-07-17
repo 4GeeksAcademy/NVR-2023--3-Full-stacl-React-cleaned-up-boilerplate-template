@@ -11,36 +11,36 @@ export const Carousel = ({ start, end }) => {
             class1: "class1",
             class2: "class2",
             class3: "class3",
-            video: ""
+            image: ""
         },
 
         {
-            content: "Certified professionals?\n Seasoned experts?\n All at your service",
+            content: "",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class13",
             class2: "class14",
             class3: "class15",
-            video: ""
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634761/09%20Home%20caroussel%20Images/01_Plumber-fotor-20230717235354_fg5799.png"
         },
         {
-            content: "",
-            background: "green",
+            content: "Certified professionals?\n Seasoned experts?\n At your service",
+            background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class4",
             class2: "class5",
             class3: "class6",
-            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455169/03%20Video/01_Painter_Golden.mp4"
+            image: ""
         },
 
         {
-            content: "What you want\n When you want it\n Where you want it\n",
+            content: "",
             background: "#24194f",
-            color: "yellow",
+            color: "rgb(226, 224, 157)",
             class1: "",
             class2: "",
             class3: "",
-            video: ""
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634761/09%20Home%20caroussel%20Images/02_Gaedening-fotor-20230717233631_mmqu5r.png"
         },
 
         {
@@ -50,26 +50,26 @@ export const Carousel = ({ start, end }) => {
             class1: "class4",
             class2: "class5",
             class3: "class6",
-            video: ""
+            image: ""
         },
         {
-            content: "Track your services like a\n breeze",
+            content: "",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
-            class1: "class10",
-            class2: "class11",
+            class1: "",
+            class2: "",
             class3: "class12",
-            video: ""
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634762/09%20Home%20caroussel%20Images/04_Dog_walking-fotor-20230717233131_ubumvs.png"
         },
 
         {
-            content: "Need extra security? \nSafeguard your services in two easy steps",
-            background: "#24194f",
-            color: "#dcdae6",
-            class1: "class16",
-            class2: "class17",
-            class3: "class18",
-            video: ""
+            content: "Need extra security?\n Safeguard your services in quick easy steps",
+            background: "rgb(1, 36, 4)",
+            color: "rgb(226, 224, 157)",
+            class1: "class1",
+            class2: "class2",
+            class3: "class3",
+            image: ""
         },
         {
             content: "\n",
@@ -78,16 +78,16 @@ export const Carousel = ({ start, end }) => {
             class1: "class19",
             class2: "class20",
             class3: "class21",
-            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689455165/03%20Video/02_Gardening_Golden.mp4"
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634762/09%20Home%20caroussel%20Images/04_Dog_walking-fotor-20230717233131_ubumvs.png"
         },
         {
             content: "Treat a loved one to an\n at-home indulgence",
             background: "rgb(1, 36, 4)",
-            color: "#D69EEB",
+            color: "rgb(226, 224, 157)",
             class1: "class1",
             class2: "class2",
             class3: "class3",
-            video: ""
+            image: ""
         },
         {
             content: "",
@@ -96,7 +96,7 @@ export const Carousel = ({ start, end }) => {
             class1: "class25",
             class2: "class26",
             class3: "class27",
-            video: "https://res.cloudinary.com/dzow47vf1/video/upload/v1689457311/03%20Video/03b_Massage_-_Golden_gnhoaq.mp4"
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634763/09%20Home%20caroussel%20Images/03_Massage-fotor-20230717233551_csqvc8.png"
         },
 
     ];
@@ -144,8 +144,8 @@ export const Carousel = ({ start, end }) => {
                                 <div className="">
                                     <div className="mt-5">
                                         <div className={`slideWrapper`} style={{ height: "15rem", background: slide.background, color: slide.color }}>
-                                            {slide.video !== "" ? (
-                                                <video src={slide.video} autoPlay muted loop className="slideVideo" />
+                                            {slide.image !== "" ? (
+                                                <img src={slide.image} className="slideImage" />
                                             ) : (
                                                 <div className="slideContent">{formatContent(slide.content, index)}</div>
 

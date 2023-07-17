@@ -145,7 +145,7 @@ button:disabled {
     overflow: hidden;
   }
   
-  .slideVideo {
+  .slideImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,7 +154,12 @@ button:disabled {
     object-fit: cover;
   }
 
+
 /* Specific slide classes  */
+
+
+
+
 
 
 /* Footer  */
