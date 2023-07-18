@@ -155,9 +155,24 @@ button:disabled {
   }
 
 
-/* Specific slide classes  */
+/* Column  */
 
+.homeTitleColumn {
 
+  font-size: .7rem;
+  font-variant: small-caps;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  color: rgb(226, 224, 157);
+
+}
+
+.homeContentColumn {
+  font-size: .6rem;
+  color: rgb(226, 224, 157);
+  font-weight: 300;
+
+}
 
 
 

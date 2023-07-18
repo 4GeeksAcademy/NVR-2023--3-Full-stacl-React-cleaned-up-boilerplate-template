@@ -137,7 +137,7 @@ export const Carousel = ({ start, end }) => {
     return (
         <>
             <div id="slideCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
-                <div className="carousel-inner mt-3 mx-0 px-0" role="listbox">
+                <div className="carousel-inner mx-0 px-0" role="listbox">
                     {selectedSlides.map((slide, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                             <div className="col-md-3">

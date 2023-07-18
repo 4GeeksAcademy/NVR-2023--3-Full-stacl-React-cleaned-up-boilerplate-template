@@ -13,7 +13,7 @@ export const Home = () => {
 	return (
 		<>
 			<div className="container-fluid">
-				<div className="Header pt-3 my-3 d-flex align-items-center justify-content-between">
+				<div className="Header pt-3 d-flex align-items-center justify-content-between">
 					<div className="logo" style={{ display: "inline-block" }}>
 						<svg width="34.5" height="37.5" viewBox="0 0 69 75" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<circle cx="34.5" cy="37.5" r="24" stroke="rgb(226, 224, 157)" strokeWidth="7" />
@@ -32,9 +32,10 @@ export const Home = () => {
 						</span>
 					</div>
 				</div>
-				<div className="rowalign-items-center justify-content-center">
+				<div className="mt-3 rowalign-items-center justify-content-center">
 					<Carousel start={startSlide} end={endSlide} />
 				</div>
+				
 				<div className="ms-5 mt-5 d-flex flex-row">
 					<div>
 						<span className="footerLink">
@@ -69,3 +70,6 @@ export const Home = () => {
 		</>
 	);
 };
+
+
+
