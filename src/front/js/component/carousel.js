@@ -63,7 +63,7 @@ export const Carousel = ({ start, end }) => {
         },
 
         {
-            content: "Want extra security?\n Safeguard your services in quick easy steps",
+            content: "Want extra security?\n Safeguard your services in two easy steps",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
@@ -136,7 +136,7 @@ export const Carousel = ({ start, end }) => {
 
     return (
         <>
-            <div id="slideCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
+            <div id="homeSlideCarousel" key="homeCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
                 <div className="carousel-inner mx-0 px-0" role="listbox">
                     {selectedSlides.map((slide, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
