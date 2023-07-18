@@ -2,6 +2,12 @@
 
 
 /* Home page - general */
+.homeMainWrapper * {
+
+  background: rgb(1, 36, 4);
+  color: rgb(226, 224, 157);
+
+}
 
 button,
 button:hover,
@@ -52,7 +58,6 @@ button:disabled {
   letter-spacing: .1rem;
   padding-inline: .63rem;
   transition: all .27s ease-in;
-  transform: translateY(.05rem)
 
 }
 
@@ -128,7 +133,7 @@ button:disabled {
 }
 
 
-/* CSS for video  */
+/* CSS for images  */
 
 .slideWrapper {
     position: relative;
