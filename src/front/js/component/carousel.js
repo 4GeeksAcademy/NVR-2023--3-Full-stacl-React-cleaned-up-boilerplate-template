@@ -59,7 +59,7 @@ export const Carousel = ({ start, end }) => {
             class1: "",
             class2: "",
             class3: "class12",
-            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634762/09%20Home%20caroussel%20Images/04_Dog_walking-fotor-20230717233131_ubumvs.png"
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689639804/09%20Home%20caroussel%20Images/imageedit_16_5332916679_gbao3r.jpg"
         },
 
         {
@@ -96,7 +96,7 @@ export const Carousel = ({ start, end }) => {
             class1: "class25",
             class2: "class26",
             class3: "class27",
-            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634763/09%20Home%20caroussel%20Images/03_Massage-fotor-20230717233551_csqvc8.png"
+            image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689637897/09%20Home%20caroussel%20Images/07_massage_rlyopk.jpg"
         },
 
     ];
