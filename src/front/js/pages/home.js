@@ -11,7 +11,12 @@ export const Home = () => {
 	};
 
 	return (
-		<>
+		<div  style={{
+			width: "100vw",
+			height: "100vh",
+			backgroundColor: "rgb(1, 36, 4)",
+			color: "rgb(226, 224, 157)"
+		   }}>
 			<div className="container-fluid">
 				<div className="Header pt-3 d-flex align-items-center justify-content-between">
 					<div className="logo" style={{ display: "inline-block" }}>
@@ -67,7 +72,7 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

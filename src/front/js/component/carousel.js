@@ -24,7 +24,7 @@ export const Carousel = ({ start, end }) => {
             image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634761/09%20Home%20caroussel%20Images/01_Plumber-fotor-20230717235354_fg5799.png"
         },
         {
-            content: "Certified professionals?\n Seasoned experts?\n At your service",
+            content: "Over 50 services at your doorstep, a click away",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class4",
@@ -44,7 +44,7 @@ export const Carousel = ({ start, end }) => {
         },
 
         {
-            content: "Over 50 services at your doorstep, a click away",
+            content: "Certified professionals,\n seasoned experts\n All at your service",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class4",
@@ -63,7 +63,7 @@ export const Carousel = ({ start, end }) => {
         },
 
         {
-            content: "Need extra security?\n Safeguard your services in quick easy steps",
+            content: "Want extra security?\n Safeguard your services in quick easy steps",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
@@ -81,7 +81,7 @@ export const Carousel = ({ start, end }) => {
             image: "https://res.cloudinary.com/dzow47vf1/image/upload/v1689634762/09%20Home%20caroussel%20Images/04_Dog_walking-fotor-20230717233131_ubumvs.png"
         },
         {
-            content: "Treat a loved one to an\n at-home indulgence",
+            content: "In a generous mood?\n Treat a loved one to an\n at-home indulgence",
             background: "rgb(1, 36, 4)",
             color: "rgb(226, 224, 157)",
             class1: "class1",
