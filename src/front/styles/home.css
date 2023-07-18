@@ -40,7 +40,8 @@ button:disabled {
 .signinUserButton:hover {
   background: white;
   border: 1px solid white;
-  color: var(--standOutGreen);
+  font-weight: 600;
+  color: rgb(1, 36, 4);
 
 }
 .registerUserButton {
@@ -63,8 +64,9 @@ button:disabled {
 
 .registerUserButton:hover {
   background: white;
-  border: 1px solid white;
-  color: var(--standOutGreen);
+  border: 1px solid ;
+  color: rgb(1, 36, 4);
+  font-weight: 600;
 }
 
 
@@ -204,5 +206,6 @@ button:disabled {
 .providerHoemButton:hover {
   background: white;
   border: 1px solid white;
-  color: var(--standOutGreen);
+  color: rgb(1, 36, 4);
+  font-weight: 400;
 }
