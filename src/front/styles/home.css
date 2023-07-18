@@ -34,9 +34,12 @@ button:disabled {
 .signinUserButton:hover {
   background: white;
   border: 1px solid white;
-  color: var(--standOutGreen);
+  color: rgb(1, 36, 4);
+  font-weight: 400;
+
 
 }
+
 .registerUserButton {
   display: flex;
   align-items: center;
@@ -47,19 +50,19 @@ button:disabled {
   margin-right: .7rem;
   font-variant: small-caps;
   font-size: .63rem;
-  font-weight: 600;
+  font-weight: 400;
   width: 5.4rem;
   letter-spacing: .1rem;
   padding-inline: .63rem;
   transition: all .27s ease-in;
-  transform: translateY(.05rem)
 
 }
 
 .registerUserButton:hover {
   background: white;
   border: 1px solid white;
-  color: var(--standOutGreen);
+  color: rgb(1, 36, 4);
+  font-weight: 400;
 }
 
 
